@@ -41,5 +41,23 @@ class Student(Person):
 student = Student('Sam', 22, 1, "DevOps")
 # print(f"{student.name} {student.age} {student.student_id} {student.course}")
 
-# Q7 Create a dictionary with 4 items and prices
-q7_dict = {'eggs': 2, 'paint': 4, 'pork': 3, 'cheese': 7}
+# Q7 Create a dictionary with 4 items and prices and get total cost
+q7_dict = {'eggs': 2.50, 'paint': 4.99, 'pork': 3.49, 'cheese': 7.00}
+total_cost = sum(q7_dict.values())
+# print(total_cost)
+
+# Q8 Create a function to do it
+def sum_cost(dict):
+    return sum(dict.values())
+
+# Q9 have a shopping list and add kiwis to it
+q9_dict = q7_dict
+q9_dict['kiwis'] = 3.49
+# print(q9_dict)
+
+# Q10 Create a list from shopping list, and loop through the list until pork is found
+q10_list = list(q9_dict.keys())
+for item in q10_list:
+    if item == 'pork':
+        break
+    # print(item)
